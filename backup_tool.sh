@@ -5,7 +5,7 @@
 # Creates the 'bash_backups' folder if one is not already present
 user=$(whoami)
 if [ ! -d /home/$user/bash_backups ]; then
-  mkdir -p /home/$user/bash_backups;
+  mkdir -p "/home/$user/bash_backups";
   echo "bash_backups folder created within /home/$user"
 fi
 
@@ -16,4 +16,4 @@ read file
 path="/home/drake/bash_backups"
 
 echo "File $file copied to $path"
-cp $file "$path"
+cp "$file" "$path"
