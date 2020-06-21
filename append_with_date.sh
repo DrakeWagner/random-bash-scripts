@@ -12,6 +12,6 @@ name=${file%.*}
 extension=${file#*.}
 output=${name}${today}.$extension
 
-cp $file $output
+cp "$file" "$output"
 echo "File is now called $output"
 
