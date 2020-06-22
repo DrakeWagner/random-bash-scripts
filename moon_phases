@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Program to teach phases of the moon
+
+echo "Input a moon phase (new, first, full, or third)"
+read phase
+if [ $phase == "new" ]
+then
+  echo "
+    ___ 
+   |   | 
+   |   | 
+    ---  "
+elif [ $phase == "first" ]
+then
+  echo "
+   ___
+  |  ||
+  |  ||
+   ---  "
+elif [ $phase == "full" ]
+then
+  echo "
+   ___
+  |||||
+  |||||
+   --- "
+elif [ $phase == "third" ]
+then
+  echo "
+   ___
+  ||  |
+  ||  |
+   --- "
+fi
+
