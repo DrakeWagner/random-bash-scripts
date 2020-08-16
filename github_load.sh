@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# opens my github on google chrome (or chromium on the raspberrypi ;) )
+# opens my github on google chrome (or chromium on the raspberrypi/linux systems ;) )
+# make sure to install the browsers via debian rather than snap if on linux
 
 
 if [ ! -x "$(command -v chromium-browser)" ];
