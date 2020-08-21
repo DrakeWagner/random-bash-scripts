@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# return shell type
+
+[[ $- == *i* ]] && echo 'This is an interactive shell' || echo 'This is not an interactive shell'
+
+shopt -q login_shell && echo 'This is a login shell' || echo 'This is not a login shell'
+
